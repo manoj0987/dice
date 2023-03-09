@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(166deg, rgba(41,41,143,1) 35%, rgba(0,212,255,1) 100%);
+}
+.container {
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    width: 70%;
+}
+.row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    font-size: 2rem;
+    margin: 20px;
+}
+.dices-area {
+    width: 50%;
+    column-gap: 10px;
+}
+.dices-area img {
+    height: 250px;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+h4 {
+    font-size: 1.5rem;
+}
+button {
+    height: 50px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    border: 2px solid #fff;
+    color: blue;
+    box-shadow: 5px 10px #000000d6;
+}
+@media (max-width: 760px) {
+    .dices-area img{
+        height: 100px;
+    }
+    button {
+        margin-top: 20px;
+        padding: 5px 10px;
+    }
+    h1 {
+        margin: 10px 0px;
+    }
+}
+@media (max-width: 400px) {
+    .dices-area img{
+        height: 70px;
+    }
+    button {
+        height: 40px;
+        font-size: 12px;
+        padding: 5px 10px;
+        margin-top: 20px;
+    }
+    h1 {font-size: 1rem; margin: 10px 0px;}
+    h2 {font-size: .8rem;}
+    h4 {font-size: .7rem;}
+}
